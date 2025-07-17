@@ -44,6 +44,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   pnpmDeps = pnpm_10.fetchDeps {
     inherit (finalAttrs) pname src;
+    fetcherVersion = 2;
     hash = if unstable then unstablePnpmDeps else stablePnpmDeps;
   };
 
