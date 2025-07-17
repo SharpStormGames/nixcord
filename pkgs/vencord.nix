@@ -29,7 +29,7 @@ let
   unstableVersion = "1.12.5-unstable-2025-07-15";
   unstableRev = "a33e81d1cbd7ab50c0b1e1446c925bf259e671fc";
   unstableHash = "sha256-7JT8BMKUhIwYMkIwr2mD8IQLDpldcDtAKh6R1tbAKMw=";
-  unstablePnpmDeps = "sha256-QiD4qTRtz5vz0EEc6Q08ej6dbVGMlPLU2v0GVKNBQyc=";
+  unstablePnpmDeps = "sha256-JP9HOaP3DG+2F89tC77JZFD0ls35u/MzxNmvMCbBo9Y=";
 in
 stdenv.mkDerivation (finalAttrs: {
   pname = "vencord" + lib.optionalString unstable "-unstable";
